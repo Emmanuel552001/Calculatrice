@@ -28,4 +28,48 @@ body {
     box-sizing: border-box;
 }
 
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
 
+button {
+    padding: 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+.operator {
+    background-color: #021024;
+    color: white;
+}
+
+.operator:hover {
+    background-color:#021024;
+}
+
+.equals {
+    background-color: #00a128;
+    color: white;
+}
+
+.equals:hover {
+    background-color: #40d867;
+}
+
+.clear {
+    background-color: #700600;
+    color: white;
+}
+
+.clear:hover {
+    background-color: #700600;
+}
