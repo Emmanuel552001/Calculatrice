@@ -10,24 +10,24 @@
     <div class="calculator">
         <input type="text" id="display" readonly>
         <div class="buttons">
-            <button class="clear">C</button>
-            <button class="operator">/</button>
-            <button class="operator">×</button>
-            <button class="operator">-</button>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button class="operator">+</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>.</button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button class="equals" onclick="calculate()" style="grid-row: span 2">=</button>
-            <button style="grid-column: span 2">0</button>
-            <button>00</button>
+            <button class="clear" onclick="effacerEcran()">C</button>
+            <button class="operator" onclick="ajouterEcran('/')">/</button>
+            <button class="operator" onclick="ajouterEcran('*')">×</button>
+            <button class="operator" onclick="ajouterEcran('-')">-</button>
+            <button onclick="ajouterEcran('7')">7</button>
+            <button onclick="ajouterEcran('8')">8</button>
+            <button onclick="ajouterEcran('9')">9</button>
+            <button class="operator" onclick="ajouterEcran('+')">+</button>
+            <button onclick="ajouterEcran('4')">4</button>
+            <button onclick="ajouterEcran('5')">5</button>
+            <button onclick="ajouterEcran('6')">6</button>
+            <button onclick="ajouterEcran('.')">.</button>
+            <button onclick="ajouterEcran('1')">1</button>
+            <button onclick="ajouterEcran('2')">2</button>
+            <button onclick="ajouterEcran('3')">3</button>
+            <button class="equals" onclick="calculer()" style="grid-row: span 2">=</button>
+            <button onclick="ajouterEcran('0')" style="grid-column: span 2">0</button>
+            <button onclick="ajouterEcran('00')">00</button>
         </div>
     </div>
     <script src="script.js"></script>
